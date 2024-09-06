@@ -27,13 +27,7 @@ const tempoObjetivo3 = new Date("2025-01-18T00:00:00");
 const tempoObjetivo4 = new Date("2025-02-18T00:00:00");
 let tempoatual = new Date();
 
-const tempos =
-[tempoObjetivo1,tempoObjetivo2,tempoObjetivo3,tempoObjetivo4];
-
-contadores[0].textContent = calculaTempo(tempos[0]);
-
-
-contadores[0].textContent = calculaTempo(tempos[0]);
+contadores[0].textContent = calculaTempo(tempoObjetivo1);
 contadores[1].textContent = calculaTempo(tempoObjetivo2);
 contadores[2].textContent = calculaTempo(tempoObjetivo3);
 contadores[3].textContent = calculaTempo(tempoObjetivo4);
