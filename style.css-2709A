@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+:root { 
+  
+    --cor-de-fundo: #09f9b5;
+    --verde: #000000;
+    --branco: #0c0202;
+    --botao-ativo: #1fdff5;
+    --botao-inativo: rgba(177, 174, 174, 0.5);
+    --texto-fundo: rgba(38, 0, 255, 0.993);
+}
+
+
+body {
+    background-color: var(--cor-de-fundo);
+    font-family: 'Lobster' , sans-serif;
+}
+
+h2 {
+  color: rgb(28, 28, 103);
+}
+
+h2{
+  color: rgb(28, 28, 103);
+}
+
+.conteudo-principal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+ .titulo-principal {
+  text-align: left;
+  width: 100%;
+  font-size: 32px;
+ }
+
+ .titulo-principal span {
+  color: var(--verde);
+ }
+
+
+.botao {
+ font-family: "Lobster", sans-serif;
+ background-color: var(--botao-inativo);
+ color: var(--branco);
+ display: flex;
+ justify-content: center;
+ padding: 1em;
+ font-size: 18px;
+ align-items: center;
+ width: 100%;
+}
+
+.abas-textos {
+ background-color: var(--texto-fundo);
+}
+
+.botao.ativo {
+  background-color: var(--botao-ativo);
+  border-bottom: 1opx solid var(--verde);
+}
+
+.aba-conteudo.ativo{
+   display: block;
+}
+
+.aba-conteudo{
+  display: none;
+}
+
+.botoes{
+  display: block;
+}
+@media screen and(min-width: 768px) {
+  .botoes {
+    display: flex;
+  }
+  
+}
+.botao:first-child{
+           border-radius: 40px 0 0 0;}
+.botao:last-child{
+           border-radius: 0 40px 0 0;}           
+ 
+.contador{
+  font-size: 2;
+  text-align: center;
+}
+
+
+.titulo-principal {
+text-align: left;
+width:100%;
+font-size: 32px;
+}
+
+.botoes {
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .botoes {
+    display: flex;
+  }
+}
+
+.botao:first-child {
+   border-radius: 40px 0 0 0;
+}
+
+.botao:last-child {
+      border-radius: 0 40px 0 0;
+}
+
+.botao.ativo {
+background-color: var(--botao-ativo);
+border-bottom: 10px solid var(--verde);
+}
+
+.abas-textos {
+  background-color: var(--texto-fundo);
+  padding: 40px;
+  border-radius: 0 0 40px 40px;
+}
+
+.aba-conteudo.ativo {
+  display: block;
+}
+
+.aba-conteudo {
+  display: none;
+}
